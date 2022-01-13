@@ -287,7 +287,7 @@ async function uploadRestauratWelcomeAsset(req,res,next){
 
 const isFileValid = (file) => {
     const type = file.type.split("/").pop();
-    const validTypes = ["jpg", "jpeg", "png", "pdf"];
+    const validTypes = ["jpg", "jpeg", "png", "pdf","mp4"];
     if (validTypes.indexOf(type) === -1) {
       return false;
     }
